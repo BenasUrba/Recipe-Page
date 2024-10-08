@@ -4,6 +4,7 @@
 .attribution { 
     font-size: 11px; 
     text-align: center; 
+    padding-top: 10px;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
@@ -184,4 +185,15 @@ hr {
 
 .item8 {
     grid-area: item8;
+}
+
+@media (max-width: 500px) {
+    .recipe-card {
+        width: 90%;
+    }
+
+    .container {
+        padding-top:0;
+        padding-bottom: 0;
+    }
 }
