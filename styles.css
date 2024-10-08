@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+html, body {
+    margin: 0;
+}
+
+
+.container {
+    background-color: hsl(30, 54%, 90%);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0;
+}
+
+.recipe-card {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    width: 32rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+    text-align: start;
+}
+
+.recipe-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.recipe-title {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-size: 1.9rem;
+    padding-top: 2rem;
+}
+
+.recipe-text {
+    font-family: "Outfit", sans-serif;
+}
+
+.recipe-text p {
+    font-size: 13px;
+    color: hsl(30, 10%, 34%);
+}
+
+
+.prep-box {
+    background-color: hsl(330, 100%, 98%);
+    width: 90%;
+    margin: 1.5rem 0;
+    padding: 5px 1.2rem;
+    border-radius: 5px;
+}
+
+.prep-box h3, li::marker {
+    color: hsl(332, 51%, 32%);
+    margin-bottom: 0;
+}
+
+li .bold-txt {
+    font-weight: 700;
+    display: inline;
+}
+
+li {
+    font-size: 13px;
+    padding: 5px 0;
+    color: hsl(30, 10%, 34%);
+}
+
+ol {
+    padding-left: 16px !important;
+    list-style-position: outside !important;
+}
+
+ol li {
+    padding-left: 10px;
+}
+
+ol li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+
+ul, ol {
+    list-style-position: inside;
+    padding-left: 8px; 
+    margin-left: 0; 
+    margin-top: 8px;
+}
+
+
+.headings {
+    font-family: "Young Serif", serif;
+    color: hsl(14, 45%, 36%);
+    font-weight: 400;
+    margin-bottom: 0;
+    
+}
+
+hr {
+    border: 1px solid hsla(30, 10%, 34%, 0.1);
+}
+
+
+.table-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "item1 item2"
+    "item3 item4"
+    "item5 item6"
+    "item7 item8";
+}
+
+.table-area div {
+    margin-bottom: 10px;
+    border-bottom: 1px solid hsla(30, 10%, 34%, 0.1);
+    padding-bottom: 10px;
+}
+
+.table-area div:nth-last-child(-n+2) {
+    border-bottom: none; 
+}
+
+.item1, .item2, .item3,
+.item4, .item5, .item6,
+.item7, .item8 {
+    padding-left: 25px;
+}
+
+.item1, .item3, .item5, .item7 {
+    color: hsla(30, 10%, 34%);
+    font-size: 14px;
+}
+
+.item2, .item4, .item6, .item8 {
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.item1 {
+    grid-area: item1;
+}
+
+.item2 {
+    grid-area: item2;
+}
+
+.item3 {
+    grid-area: item3;
+}
+
+.item4 {
+    grid-area: item4;
+}
+
+.item5 {
+    grid-area: item5;
+}
+
+.item6 {
+    grid-area: item6;
+}
+
+.item7 {
+    grid-area: item7;
+}
+
+.item8 {
+    grid-area: item8;
+}
